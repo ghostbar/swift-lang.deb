@@ -1,0 +1,5 @@
+swift-lang (2.2-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Jose Luis Rivas <ghostbar@debian.org>  Fri, 01 Apr 2016 02:20:10 -0400

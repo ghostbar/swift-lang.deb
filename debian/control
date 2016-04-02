@@ -1,0 +1,38 @@
+Source: swift-lang
+Section: devel
+Priority: optional
+Maintainer: Jose Luis Rivas <ghostbar@debian.org>
+Build-Depends: debhelper (>= 9),
+ cmake,
+ ninja-build,
+ clang,
+ python,
+ uuid-dev,
+ libicu-dev,
+ icu-devtools,
+ libbsd-dev,
+ libedit-dev,
+ libxml2-dev,
+ libsqlite3-dev,
+ llvm-dev,
+ swig,
+ libpython-dev,
+ libncurses5-dev,
+ pkg-config
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/ghostbar/swift-lang.deb.git
+Vcs-Browser: https://github.com/ghostbar/swift-lang.deb
+Homepage: https://swift.org
+
+Package: swift-lang
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: python-swiftclient
+Description: Swift general-purpose programming language
+ Swift is a general-purpose programming language built using a modern approach
+ to safety, performance, and software design patterns.
+ .
+ The goal of the Swift project is to create the best available language for
+ uses ranging from systems programming, to mobile and desktop apps, scaling up
+ to cloud services. Most importantly, Swift is designed to make writing and
+ maintaining correct programs easier for the developer.
