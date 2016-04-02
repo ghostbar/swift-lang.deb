@@ -147,7 +147,7 @@ macro(swift_common_standalone_build_config product is_cross_compiling)
   find_program(LLVM_TABLEGEN_EXE "llvm-tblgen" "${${product}_NATIVE_LLVM_TOOLS_PATH}"
     NO_DEFAULT_PATH)
 
-  set(LLVM_CMAKE_PATH "${LLVM_BINARY_DIR}/share/llvm/cmake")
+  set(LLVM_CMAKE_PATH "/usr/share/llvm-3.6/cmake")
   list(APPEND CMAKE_MODULE_PATH "${LLVM_CMAKE_PATH}")
 
   set(LLVMCONFIG_FILE "${LLVM_CMAKE_PATH}/LLVMConfig.cmake")
