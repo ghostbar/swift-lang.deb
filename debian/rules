@@ -4,4 +4,5 @@
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCMAKE_BUILD_TYPE:STRING=Release
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE:STRING=Release \
+		-DCMAKE_VERBOSE_MAKEFILE=ON
